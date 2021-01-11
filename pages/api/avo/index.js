@@ -1,4 +1,4 @@
-import DB from "../../../database/db.js";
+import DB from "@database/db.js";
 
 const allAvos = async (req, res) => {
   try {
