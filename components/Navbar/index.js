@@ -1,15 +1,16 @@
 import React from "react";
+// next
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "@styles/navbar.module.css";
+// icons
 import { FaShoppingBasket } from "react-icons/fa";
 import { GiAvocado } from "react-icons/gi";
+// styles
+import styles from "@styles/navbar.module.css";
 
 export const Navbar = () => {
   const { pathname } = useRouter();
-
   const validateRoute = (path) => (pathname === path ? styles.active : null);
-
   return (
     <div className={styles.container}>
       <Link href="/">
