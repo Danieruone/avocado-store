@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container a {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  margin-left: 10px;
+}
+
+.active {
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #cbcccc;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.detail {
+  text-align: left;
+  font-size: 12px;
+  border-top: 1px solid #cbcccc;
+  width: 100%;
+  padding: 10px;
+}
+
+.container:hover {
+  margin-top: 10px;
+  cursor: pointer;
+}
