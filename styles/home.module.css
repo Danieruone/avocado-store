@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+}
