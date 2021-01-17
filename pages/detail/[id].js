@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useRouter } from "next/router";
 
-const AboutPage = () => {
+const DetailPage = () => {
   const { query } = useRouter();
   const [product, setProduct] = useState({});
 
@@ -23,4 +23,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default DetailPage;
