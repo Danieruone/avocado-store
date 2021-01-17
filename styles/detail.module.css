@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.detailContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.cartDetail{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .detailContainer{
+        width: 90%;
+    }
+  }
