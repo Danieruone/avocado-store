@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+// components
 import { AvocadoCard } from "@components/AvocadoCard";
-import styles from "@styles/home.module.css";
 import Avocado from "@components/Avocado";
+// styles
+import styles from "@styles/home.module.css";
 
 const axios = require("axios");
 
