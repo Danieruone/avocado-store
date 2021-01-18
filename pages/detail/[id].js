@@ -2,26 +2,29 @@ import React, { useState, useEffect, Fragment } from "react";
 import { useRouter } from "next/router";
 import styles from "@styles/detail.module.css";
 
+const axios = require("axios");
+
 const DetailPage = () => {
   const { query } = useRouter();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
     if (query.id) {
-      window
-        .fetch(`/api/avo/${query.id}`)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          setProduct(data);
-        });
+      axios
+        .get(`/api/avo/${query.id}`)
+        .then((response) => setProduct(response.data))
+        .catch((err) => console.log(err));
     }
   }, [query.id]);
 
   return (
     <Fragment>
       {product == null ? (
-        <h1>Product not found</h1>
+        <div className={styles.container}>
+          <div className={styles.detailContainer}>
+            <p>Product not found</p>
+          </div>
+        </div>
       ) : (
         <div className={styles.container}>
           <div className={styles.detailContainer}>
@@ -39,7 +42,7 @@ const DetailPage = () => {
             </div>
             <div>
               <h1>About this avocado</h1>
-              <p>{product ? 'description' : product.attributes.description}</p>
+              <p>{product.attributes.description}</p>
             </div>
           </div>
         </div>
