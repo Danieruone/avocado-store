@@ -35,8 +35,16 @@ const DetailPage = () => {
                 <p>{product.price}</p>
                 <p>{`SKU: ${product.sku}`}</p>
                 <div>
-                  <input placeholder="Quantity"></input>
-                  <input type="button" value="Add to Cart"></input>
+                  <input
+                    className={styles.quantityInput}
+                    placeholder="Quantity"
+                    type="number"
+                  ></input>
+                  <input
+                    className={styles.addToCartButton}
+                    type="button"
+                    value="Add to Cart"
+                  ></input>
                 </div>
               </div>
             </div>

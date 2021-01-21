@@ -4,20 +4,33 @@
   width: 100%;
 }
 
-.detailContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
 
-.cartDetail{
-    display: flex;
-    align-items: center;
+.cartDetail {
+  display: flex;
+  align-items: center;
+}
+
+.addToCartButton {
+  border: none;
+  padding: 11px;
+  color: white;
+  cursor: pointer;
+  background-color: #16ab39;
+}
+
+.quantityInput {
+  border: solid 0.1px gray;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
-    .detailContainer{
-        width: 90%;
-    }
+  .detailContainer {
+    width: 90%;
   }
+}
